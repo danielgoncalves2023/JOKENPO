@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papel, pedra e tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bem-vindo ao desafio: Pedra, Papel e Tesoura
+        </h1>
+    </header>
+
+    <!-- Tabela contadores -->
+    <div id="tabela">
+        <table>
+            <thead>
+                <td colspan="3">
+                    Contador
+                </td>
+            </thead>
+            <tr>
+                <th>Vitórias</th>
+                <th>Derrotas</th>
+                <th>Empates</th>
+            </tr>
+            <tr>
+                <td id="contador-vitorias">0</td>
+                <td id="contador-derrotas">0</td>
+                <td id="contador-empates">0</td>
+            </tr>
+            <tfoot>
+                <td colspan="3">
+                    <button id="resetContador">Resetar contadores</button>
+                </td>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <h2>Escolha a sua opção!</h2>
+    </div>
+    <!-- Opções do usuário: Pedra, Papel ou Tesoura -->
+    <div id="escolha">
+        <img src="assets/image/papel.png" onclick="result('papel')" alt="papel">
+        <img src="assets/image/pedra.png" onclick="result('pedra')" alt="pedra">
+        <img src="assets/image/tesoura.png" onclick="result('tesoura')" alt="tesoura">
+    </div>
+    <!-- Div resultado random -->
+    <div>
+        <p id='resultado'>VERSUS</p>
+    </div>
+    <div id="div_slides">
+        <img src="assets/image/interrogacao.webp" id="slides">
+    </div>
+
+    <footer>
+        <h3>
+            Desenvolvido por Daniel Gonçalves dos Santos @2023
+        </h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

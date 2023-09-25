@@ -1,0 +1,148 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/image/background.png');
+    background-size: cover;
+}
+
+#tabela {
+    display: flex;
+    justify-content: center;
+}
+
+table thead td {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+table, tr, th, td {
+    border: 4px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+table tfoot button {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 20px;
+    border: 2px solid black;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: default;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    cursor: default;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+    font-family: monospace;
+    cursor: default;
+}
+
+#escolha {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#escolha img {
+    width: 100%;
+    border: 2px solid black;
+    background: rgba(97, 97, 76, 0.5);
+    border-radius: 30px;
+    transition: .4s;
+    margin: .8rem;
+}
+
+#escolha img:hover {
+    transition: .4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#resultado {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#resultado p {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#div_slides {
+    display: flex;
+    justify-content: center;
+}
+
+#slides {
+    height: auto;
+    width: 40%;
+    margin: 2rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 13px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: default;
+}
+
+@media (orientation: landscape) {
+    #escolha {
+        width: 80%;  
+    }
+
+    #escolha img {
+        width: 50%;
+        margin: 3rem;
+    }
+
+    #slides {
+        height: 30%;
+        width: 40%;
+        margin: 2rem;
+    }
+}

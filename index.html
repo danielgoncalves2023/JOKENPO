@@ -17,7 +17,30 @@
         </h1>
     </header>
 
+    <!-- TO DO:
+        4 - ADICIONAR "LOADING" PARA MELHORAS EXPERIÊNCIA DO USUÁRIO -->
+
     <!-- Tabela contadores -->
+    <div>
+        <h2 id="texto_escolha">Escolha a sua opção!</h2>
+    </div>
+    <!-- Opções do usuário: Pedra, Papel ou Tesoura -->
+    <div id="escolha">
+        <img id="papel" src="assets/image/papel.png" onclick="result('papel')" alt="papel">
+        <img id="pedra" src="assets/image/pedra.png" onclick="result('pedra')" alt="pedra">
+        <img id="tesoura" src="assets/image/tesoura.png" onclick="result('tesoura')" alt="tesoura">
+    </div>
+    <!-- Div resultado random -->
+    <div>
+        <p id='resultado'>VERSUS</p>
+        <p id='escolhaAdversario'></p>
+    </div>
+    <div id="div_slides">
+        <img src="assets/image/interrogacao.webp" id="slides">
+    </div>
+    <div id="divbotaoReiniciar">
+        <button id="botaoReiniciar" onclick="jogarNovamente()">Jogar novamente</button>
+    </div>
     <div id="tabela">
         <table>
             <thead>
@@ -41,22 +64,6 @@
                 </td>
             </tfoot>
         </table>
-    </div>
-    <div>
-        <h2>Escolha a sua opção!</h2>
-    </div>
-    <!-- Opções do usuário: Pedra, Papel ou Tesoura -->
-    <div id="escolha">
-        <img src="assets/image/papel.png" onclick="result('papel')" alt="papel">
-        <img src="assets/image/pedra.png" onclick="result('pedra')" alt="pedra">
-        <img src="assets/image/tesoura.png" onclick="result('tesoura')" alt="tesoura">
-    </div>
-    <!-- Div resultado random -->
-    <div>
-        <p id='resultado'>VERSUS</p>
-    </div>
-    <div id="div_slides">
-        <img src="assets/image/interrogacao.webp" id="slides">
     </div>
 
     <footer>

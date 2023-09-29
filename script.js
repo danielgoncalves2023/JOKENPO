@@ -1,8 +1,8 @@
 var opcoes = ['papel', 'pedra', 'tesoura'];
 var slidesRandom = document.getElementById('slides');
 // Endereços das imagens de pedra, papel, tesoura e interrogação para DOM
-var slides = ["../assets/image/papel.png", "../assets/image/pedra.png", "../assets/image/tesoura.png"];
-var interrogacao = ["../assets/image/interrogacao.webp"];
+var slides = ["assets/image/papel.png", "assets/image/pedra.png", "assets/image/tesoura.png"];
+var interrogacao = ["assets/image/interrogacao.webp"];
 // Mensagens de venceu, perdeu e empatou
 var win = ["Você é um sortudo! A vitória é sua!", "Você fez isso! Você é o mestre da sorte!", "Incrível! A sorte sorriu para você hoje!", "Você venceu! Está sentindo a sorte ao seu lado?"];
 var draw = ["Ninguém saiu vitorioso, mas pelo menos ninguém saiu derrotado também!", "Ninguém sai perdendo quando é um empate! É um resultado justo.", "Ninguém é um perdedor aqui. Empatou!", "Parece que a sorte gosta de manter as coisas equilibradas. Empate!"];
@@ -128,7 +128,7 @@ function jogarNovamente() {
     textoResultado.innerHTML = "VERSUS";
     textoEscolha.innerHTML = "Escolha a sua opção!";
     // Retorna imagem inicial no local de escolha do oponente
-    slidesRandom.setAttribute('src', '../assets/image/interrogacao.webp');
+    slidesRandom.setAttribute('src', 'assets/image/interrogacao.webp');
     // Faz botão Jogar Novamente desaparecer
     botaoReset.style.display = "none";
 }

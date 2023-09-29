@@ -7,7 +7,7 @@ function loading() {
     loadingSpin.style.display = "flex";
 
     setTimeout(function() {
-        window.location.href = "../main/main.html";
+        window.location.href = "main.html";
     }, 2000)
 }
 

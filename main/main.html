@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKENPÔ!</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../assets/image/jokenpo.ico">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bem-vindo ao desafio: Pedra, Papel e Tesoura
+        </h1>
+    </header>
+
+    <!-- TO DO:
+        4 - ADICIONAR "LOADING" PARA MELHORAS EXPERIÊNCIA DO USUÁRIO -->
+
+    <!-- Tabela contadores -->
+    <div>
+        <h2 id="texto_escolha">Escolha a sua opção!</h2>
+        <p id="loadingSpin"></p>
+    </div>
+    <!-- Opções do usuário: Pedra, Papel ou Tesoura -->
+    <div id="escolha">
+        <img id="papel" src="../assets/image/papel.png" onclick="result('papel')" alt="papel">
+        <img id="pedra" src="../assets/image/pedra.png" onclick="result('pedra')" alt="pedra">
+        <img id="tesoura" src="../assets/image/tesoura.png" onclick="result('tesoura')" alt="tesoura">
+    </div>
+    <!-- Div resultado random -->
+    <div>
+        <p id='resultado'>VERSUS</p>
+        <p id='escolhaAdversario'></p>
+    </div>
+    <div id="div_slides">
+        <img src="../assets/image/interrogacao.webp" id="slides">
+    </div>
+    <div id="divbotaoReiniciar">
+        <button id="botaoReiniciar" onclick="jogarNovamente()">Jogar novamente</button>
+    </div>
+    <div id="tabela">
+        <table>
+            <thead>
+                <td colspan="3">
+                    PLACAR
+                </td>
+            </thead>
+            <tr>
+                <th>Vitórias</th>
+                <th>Derrotas</th>
+                <th>Empates</th>
+            </tr>
+            <tr>
+                <td id="contador-vitorias">0</td>
+                <td id="contador-derrotas">0</td>
+                <td id="contador-empates">0</td>
+            </tr>
+            <tfoot>
+                <td colspan="3">
+                    <button id="resetContador">Reiniciar placar</button>
+                </td>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer>
+        <h3>
+            Desenvolvido por Daniel Gonçalves dos Santos @2023
+        </h3>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

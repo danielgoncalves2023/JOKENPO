@@ -37,8 +37,8 @@ function result(escolha) {
     setTimeout(function() {
         var resultado = opcoes[Math.floor(Math.random() * 2.99)];
         var mensagemWin = `VITÓRIA! ${win[Math.floor(Math.random() * 3.99)]}`;
-        var mensagemLose = `PERDEU... ${lose[Math.floor(Math.random() * 5.99)]}`;
-        var mensagemDraw = `EMPATE: ${draw[Math.floor(Math.random() * 4.99)]}`;
+        var mensagemDraw = `EMPATE: ${draw[Math.floor(Math.random() * 3.99)]}`;
+        var mensagemLose = `PERDEU... ${lose[Math.floor(Math.random() * 4.99)]}`;
         slidesRandom.setAttribute('src', slides[opcoes.indexOf(resultado)]);
         botaoReset.style.display = "flex";
 

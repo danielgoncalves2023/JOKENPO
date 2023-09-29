@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/image/background.png');
+    background-image: url('/assets/image/background.png');
     background-size: auto;
 }
 

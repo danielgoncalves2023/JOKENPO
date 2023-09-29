@@ -112,6 +112,7 @@ function result(escolha) {
 
 // Reseta funções iniciais do jogo
 function jogarNovamente() {
+    setTimeout(function() {
     // Redefine os atributos de eventos
     pedra.setAttribute('onclick', 'result("pedra")');
     papel.setAttribute('onclick', 'result("papel")');
@@ -131,6 +132,7 @@ function jogarNovamente() {
     slidesRandom.setAttribute('src', 'assets/image/interrogacao.webp');
     // Faz botão Jogar Novamente desaparecer
     botaoReset.style.display = "none";
+    }, 500)
 }
 
 // Reseta contadores da tabela
@@ -144,4 +146,3 @@ function resetContador() {
 }
 
 document.getElementById('resetContador').addEventListener("click", resetContador);
-botaoReset.addEventListener
